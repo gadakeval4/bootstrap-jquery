@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start Login modal -->
+    <div id="loginmodal" class="modal fade">
+
+        <!-- modal-dialog sets the proper width and margin of the modal. -->
+        <div class="modal-dialog">
+
+            <!-- Header -->
+            <div class="modal-content">
+
+                <!-- modal-header is used to define the style for the header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4>Registration Form: </h4>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                    <!--Starts Modal Form -->
+                    <form>
+                        <div class="form-group">
+                            <label>Name :</label>
+                            <input type="text" class="form-control" placeholder="Enter Full Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Place :</label>
+                            <input type="text" class="form-control" placeholder="Enter Place">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Cellphone :</label>
+                            <input type="text" required maxlength="10" class="form-control" placeholder="xxx-xxx-xxxx">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Age :</label>
+                            <input type="number" min="0" max="120" class="form-control" placeholder="Enter Age">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger">Submit</button>
+                        </div>
+
+
+                    </form>
+                    <!-- End of Form -->
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+                <!-- End of Modal Body -->
+
+            </div>
+        </div>
+
+    </div>
+    <!-- End Login Modal -->
+
+
+
+    <!-- Start Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Navbar-Brand is for brand name -->
+                <img src="C:\Users\10656573\Desktop\lti.png" class="navbar-brand" href="#"></img>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#" data-toggle="modal" data-target="">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit </button>
+                    <button style="margin-left: 10px" class="btn btn-warning" data-toggle="modal"
+                        data-target="#loginmodal">Register</button>
+
+                </form>
+                <li><button style="margin-top: 8px" class="btn btn-danger" href="#">News <span
+                            class="badge">10</span></button></li>
+                <li><button href="#" style="margin-top: 8px; margin-left: 10px" class="btn btn-primary">Comments <span
+                            class="badge">5</span> </button></li>
+
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- End Navbar -->
+
+
+    <div class="jumbotron jumbotron-fluid" style="background-color: papayawhip">
+        <div class="container-fluid">
+            <h2 style="font-weight: bold">Larsen & Taubro Infotech Ltd</h2>
+            <h4>World's Largest Service Provider</h4>
+        </div>
+    </div>
+
+    <div style="width: 250px; margin-left: 10px">
+     <!-- Start Form -->
+        <form>
+            <div class="form-group">
+                <label>Name :</label>
+                <input type="text" class="form-control" placeholder="Enter Full Name">
+            </div>
+
+            <div class="form-group">
+                <label>Place :</label>
+                <input type="text" class="form-control" placeholder="Enter Place">
+            </div>
+
+
+            <div class="form-group">
+                <label>Cellphone :</label>
+                <input type="text" required maxlength="10" class="form-control" placeholder="xxx-xxx-xxxx">
+            </div>
+
+            <div class="form-group">
+                <label>Age :</label>
+                <input type="text" class="form-control" placeholder="Enter Age">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger">Submit</button>
+            </div>
+        </form>
+<!-- End Form -->
+    </div>
+
+</body>
+
+</html>
